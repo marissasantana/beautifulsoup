@@ -58,3 +58,24 @@ img_tag = soup.find('img')
 print('The img source:')
 print(img_tag['src'])
 print('------')
+
+# print('The goodbye-list element')
+# the_goodbye_element = soup.find(id='goodbye-list')
+# print(the_goodbye_element)
+# print('------')
+
+print('List items within the goodbye tag')
+goodbye_list_items = all_goodbye_elements[0].find_all('li')
+print (goodbye_list_items)
+print('------')
+
+print('The width of the img element')
+img = soup.find("img")
+width = img["width"]
+print(width)
+print('------')
+
+print('The URL that the <a> tag points to')
+url = soup.find("a")
+url2 = url["href"]
+print(url2)
